@@ -1,0 +1,29 @@
+<launch>
+    <node   
+	pkg='turtlesim' 
+	type='turtlesim_node' 
+	name='turtle1'>
+   	</node>
+
+    <node 
+	pkg='turtlesim'
+	type='turtle_teleop_key' 
+	name='splinter' 
+	output='screen'> 
+	</node>
+
+    <node 
+	pkg='rosservice' 
+	type='rosservice' 
+	name='turtle2' 
+	args='call /spawn 4.5 5.5 0.0 turtle2'> 
+	</node>
+
+    <node 
+	pkg='ros_home' 
+	name='hw_ros'  
+	type='hw_ros.py'
+	output='screen'>
+	</node>
+
+</launch>
