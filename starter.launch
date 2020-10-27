@@ -8,7 +8,7 @@
     <node 
 	pkg='turtlesim'
 	type='turtle_teleop_key' 
-	name='splinter' 
+	name='coursor' 
 	output='screen'> 
 	</node>
 
